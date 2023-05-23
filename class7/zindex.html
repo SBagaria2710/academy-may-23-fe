@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z-Index</title>
+
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+        }
+
+        .cyan {
+            background-color: cyan;
+        }
+
+        .red {
+            background-color: red;
+            position: relative;
+            top: -60px;
+            left: 40px;
+
+            z-index: 999;
+        }
+
+        .blue {
+            background-color: blue;
+            position: relative;
+            top: -140px;
+            left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="box cyan"></div>
+        <div class="box red"></div>
+        <div class="box blue"></div>
+    </div>
+</body>
+</html>
